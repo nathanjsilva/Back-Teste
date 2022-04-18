@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "95f12a83-3341-40e2-bb8a-5ec5af1b91d2",
+		"name": "API laravel 8 - Lanchonete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get/Pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/pedidos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"pedidos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inserir/pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_cliente\": \"Nathan de Jesus Silva\",\r\n    \"documento_cliente\": \"01889148628\",\r\n    \"nome_sanduiche\": \"Hamburguer com bacon\",\r\n    \"qtd_sanduiche\": \"2\",\r\n    \"status_pedido\": \"A fazer\",\r\n    \"valor_sanduiche\": \"15.50\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/inserir/pedido",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inserir",
+						"pedido"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar/pedido",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status_pedido\" : \"preparacao\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/atualizar/pedido/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"atualizar",
+						"pedido",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletar/pedido",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/deletar/pedido/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deletar",
+						"pedido",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
